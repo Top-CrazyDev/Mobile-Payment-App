@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PaymentMethodType Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/PaymentMethodType" class="dashAnchor"></a>
+    <a title="PaymentMethodType Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Datatrans 3.6.3 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/datatrans/ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Datatrans Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        PaymentMethodType Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Transaction.html">Transaction</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionOptions.html">TransactionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionOptions/DCCShowMode.html">– DCCShowMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransactionDelegate.html">TransactionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionSuccess.html">TransactionSuccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionError.html">TransactionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Theme%20Options.html">Theme Options</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeConfiguration.html">ThemeConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Payment%20Method.html">Payment Method</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApplePayConfig.html">ApplePayConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BoncardConfig.html">BoncardConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BoncardType.html">BoncardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardExpiryDate.html">CardExpiryDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardLabelType.html">CardLabelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentMethod.html">PaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentMethodType.html">PaymentMethodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentMethodTypeMapper.html">PaymentMethodTypeMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedBoncard.html">SavedBoncard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedCard.html">SavedCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedPaymentMethod.html">SavedPaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedPayPal.html">SavedPayPal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedPostFinanceCard.html">SavedPostFinanceCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedReka.html">SavedReka</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SavedSEPA.html">SavedSEPA</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PCI%20Proxy.html">PCI Proxy</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPTokenization.html">PCIPTokenization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPTokenizationOptions.html">PCIPTokenizationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PCIPTokenizationDelegate.html">PCIPTokenizationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPTokenizationSuccess.html">PCIPTokenizationSuccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPCardInfo.html">PCIPCardInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPTokenizationError.html">PCIPTokenizationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPCVVOnlyCard.html">PCIPCVVOnlyCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PCIPCardholder.html">PCIPCardholder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppCallbackHandler.html">AppCallbackHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BackendError.html">BackendError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Extensions.html#/SlidingArray">SlidingArray</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InitialLoaderDelegate.html">InitialLoaderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PaymentMethodType</h1>
+            <p>The payment method used during the transaction.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Visa" class="dashAnchor"></a>
+                    <a class="token" href="#/">Visa</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Visa payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/MasterCard" class="dashAnchor"></a>
+                    <a class="token" href="#/">MasterCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>MasterCard payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/DinersClub" class="dashAnchor"></a>
+                    <a class="token" href="#/">DinersClub</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diners Club payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/AmericanExpress" class="dashAnchor"></a>
+                    <a class="token" href="#/">AmericanExpress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>American Express payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/JCB" class="dashAnchor"></a>
+                    <a class="token" href="#/">JCB</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>JCB payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/UATP" class="dashAnchor"></a>
+                    <a class="token" href="#/">UATP</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UATP payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Discover" class="dashAnchor"></a>
+                    <a class="token" href="#/">Discover</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Discover payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Supercard" class="dashAnchor"></a>
+                    <a class="token" href="#/">Supercard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SUPERCARD payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/PostFinanceCard" class="dashAnchor"></a>
+                    <a class="token" href="#/">PostFinanceCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PostFinance Card payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/PostFinanceEFinance" class="dashAnchor"></a>
+                    <a class="token" href="#/">PostFinanceEFinance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PostFinance E-Finance payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/PayPal" class="dashAnchor"></a>
+                    <a class="token" href="#/">PayPal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PayPal payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Easypay" class="dashAnchor"></a>
+                    <a class="token" href="#/">Easypay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Swisscom Pay payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/SEPA" class="dashAnchor"></a>
+                    <a class="token" href="#/">SEPA</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SEPA (ELV) payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/SwissBilling" class="dashAnchor"></a>
+                    <a class="token" href="#/">SwissBilling</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwissBilling payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Twint" class="dashAnchor"></a>
+                    <a class="token" href="#/">Twint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Twint payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/ApplePay" class="dashAnchor"></a>
+                    <a class="token" href="#/">ApplePay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apple Pay payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Reka" class="dashAnchor"></a>
+                    <a class="token" href="#/">Reka</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reka payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/CembraPay" class="dashAnchor"></a>
+                    <a class="token" href="#/">CembraPay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CembraPay payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/SwissPass" class="dashAnchor"></a>
+                    <a class="token" href="#/">SwissPass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwissPass payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Powerpay" class="dashAnchor"></a>
+                    <a class="token" href="#/">Powerpay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Powerpay payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Paycard" class="dashAnchor"></a>
+                    <a class="token" href="#/">Paycard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Paycard payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Paysafecard" class="dashAnchor"></a>
+                    <a class="token" href="#/">Paysafecard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Paysafecard payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Boncard" class="dashAnchor"></a>
+                    <a class="token" href="#/">Boncard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gift card / Boncard / Lunch-Check payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Elo" class="dashAnchor"></a>
+                    <a class="token" href="#/">Elo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Elo card payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Hipercard" class="dashAnchor"></a>
+                    <a class="token" href="#/">Hipercard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hipercard payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Klarna" class="dashAnchor"></a>
+                    <a class="token" href="#/">Klarna</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Klarna payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Dankort" class="dashAnchor"></a>
+                    <a class="token" href="#/">Dankort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dankort payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Swish" class="dashAnchor"></a>
+                    <a class="token" href="#/">Swish</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Swish payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Vipps" class="dashAnchor"></a>
+                    <a class="token" href="#/">Vipps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vipps payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/MobilePay" class="dashAnchor"></a>
+                    <a class="token" href="#/">MobilePay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>MobilePay payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/Maestro" class="dashAnchor"></a>
+                    <a class="token" href="#/">Maestro</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maestro payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/ChinaUnionPay" class="dashAnchor"></a>
+                    <a class="token" href="#/">ChinaUnionPay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>China Union Pay payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Element/HalfFarePlus" class="dashAnchor"></a>
+                    <a class="token" href="#/">HalfFarePlus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SBB Half Fare Travelcard PLUS payment method</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the 3-letter payment method identifier</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
